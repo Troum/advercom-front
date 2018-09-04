@@ -1,0 +1,11 @@
+.project {
+  min-height: 100vh;
+  min-width: 100%;
+}
+.video-fluid {
+  width: 100%;
+  height: auto;
+}
+
+
+

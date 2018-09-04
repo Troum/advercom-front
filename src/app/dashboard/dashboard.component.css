@@ -1,0 +1,93 @@
+.animated-background {
+  background: linear-gradient(270deg, #ed45b3, #5a6268);
+  background-size: 1000% 1000%;
+}
+.dashboard {
+  min-height: 100vh;
+  min-width: 100%;
+}
+.file-field {
+  position: relative;
+}
+.file-field input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+input[type="file" i] {
+  align-items: baseline;
+  color: inherit;
+  text-align: start !important;
+}
+input[type="hidden" i], input[type="image" i], input[type="file" i] {
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+input, textarea, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb !important;
+}
+.file-field .file-path-wrapper {
+  overflow: hidden;
+  padding-left: 10px;
+  height: 2.5rem;
+}
+.file-field input.file-path {
+  width: 100%;
+  height: 2.1rem;
+}
+.btn-file {
+  background: linear-gradient(270deg, #ed45b3, #97146b);
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.md-form label{
+  position: absolute;
+  top: .1rem!important;
+  left: 0;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: text;
+  color: #757575;
+}
+

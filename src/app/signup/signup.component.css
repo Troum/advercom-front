@@ -1,0 +1,84 @@
+.animated-background {
+  background: linear-gradient(270deg, #ad45b3, #67166b, #1183d9);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.form-gradient .font-small {
+  font-size: 0.8rem;
+}
+
+.form-gradient .header {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.form-gradient input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #8f94fb;
+  -webkit-box-shadow: 0 1px 0 0 #8f94fb;
+  box-shadow: 0 1px 0 0 #8f94fb;
+}
+
+.form-gradient input[type=text]:focus:not([readonly]) + label {
+  color: #4f4f4f;
+}
+
+.form-gradient input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #8f94fb;
+  -webkit-box-shadow: 0 1px 0 0 #8f94fb;
+  box-shadow: 0 1px 0 0 #8f94fb;
+}
+
+.form-gradient input[type=password]:focus:not([readonly]) + label {
+  color: #4f4f4f;
+}
+
+.peach-gradient {
+  background: -webkit-linear-gradient(50deg, #4e54c8, #8f94fb) !important;
+  background: -o-linear-gradient(50deg, #4e54c8, #8f94fb) !important;
+  background: linear-gradient(40deg, #4e54c8, #8f94fb) !important;
+}
+
+a {
+  transition: .2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+.ng-invalid:not(form) {
+  border-bottom: 1px solid #8f94fb!important;
+  -webkit-box-shadow: 0 1px 0 0 #8f94fb!important;
+  box-shadow: 0 1px 0 0 #8f94fb!important;
+}
+
+.ng-valid:not(form) {
+  border-bottom: 1px solid #4e54c8!important;
+  -webkit-box-shadow: 0 1px 0 0 #4e54c8!important;
+  box-shadow: 0 1px 0 0 #4e54c8!important;
+}
+
+.btn-login {
+  background: -webkit-linear-gradient(50deg, #4e54c8, #8f94fb) !important;
+  background: -o-linear-gradient(50deg, #4e54c8, #8f94fb) !important;
+  background: linear-gradient(40deg, #4e54c8, #8f94fb) !important;
+}

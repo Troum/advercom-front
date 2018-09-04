@@ -1,18 +1,34 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~mdbootstrap/css/mdb.min.css";
-@import url("https://use.fontawesome.com/releases/v5.0.12/css/all.css");
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-@import "~animate.css/animate.min.css";
-html,
-body {
-  max-width: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+.a-letter {
+  animation-delay: .2s;
 }
-
-.intro-section, .login {
+.d-letter {
+  animation-delay: .4s;
+}
+.v-letter {
+  animation-delay: .6s;
+}
+.e-letter {
+  animation-delay: .8s;
+}
+.r-letter {
+  animation-delay: 1s;
+}
+.c-letter {
+  animation-delay: 1.2s;
+}
+.o-letter {
+  animation-delay: 1.4s;
+}
+.m-letter {
+  animation-delay: 1.6s;
+}
+.hr-animate {
+  animation-delay: 1.8s;
+}
+.hr-circle {
+  animation-delay: 2s;
+}
+.intro-section {
   width: 100vw;
   height: 100vh!important;
 }
@@ -50,7 +66,7 @@ body {
   z-index: 2;
 }
 .parallax-one {
-  background-image: linear-gradient(rgba(255, 110, 196, 0.4),rgba(120, 115, 245, 0.4)), url('./assets/parallax-image.jpg');
+  background-image: linear-gradient(rgba(255, 110, 196, 0.4),rgba(120, 115, 245, 0.4)), url('../../assets/parallax-image.jpg');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -84,39 +100,4 @@ body {
 
 .contact-icons {
   list-style-type: none;
-}
-button:focus {
-  outline: none!important;
-}
-.mat-dialog-container {
-  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
-  display: block;
-  padding: 0!important;
-  border-radius: 2px;
-  box-sizing: border-box;
-  overflow: auto;
-  outline: 0;
-  width: 100%;
-  height: 100%;
-}
-mat-cell:hover {
-  cursor: pointer!important;
-}
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #e83e8c;
-}
-::-webkit-scrollbar-button {
-  background-color: #fff;height: 0;
-}
-::-webkit-inner-spin-button {
-  background-color: #e83e8c;
-}
-::-webkit-outer-spin-button {
-  background-color: #e83e8c;
 }

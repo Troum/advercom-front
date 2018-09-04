@@ -1,0 +1,23 @@
+<div class="row p-0 m-0">
+  <div class="col-md-12 m-0 p-0 mx-auto">
+    <button class="bg-navi" mat-mini-fab (click)="close()">&times;</button>
+  </div>
+  <div class="col-md-12 m-0 p-5">
+    <form class="md-form">
+      <p class="h4 text-center mb-4 text-dark text-uppercase"><small>Изменение проекта</small></p>
+      <div class="md-form">
+        <input type="text" id="name" class="form-control" name="name" (change)="changeName()" value="{{project.name}}" #name required>
+      </div>
+      <div class="md-form">
+        <input type="text" id="client" class="form-control" name="client" (change)="changeClient()" value="{{project.client}}" #client required>
+      </div>
+      <div class="md-form">
+        <textarea id="description" class="md-textarea w-100" name="description" (change)="changeDescription()" rows="20" #description required>{{project.description}}</textarea>
+      </div>
+      <div class="text-right mt-4">
+        <button class="btn btn-pink" (click)="edit(name,client,description)">Изменить проект</button>
+        <button class="btn btn-secondary" (click)="delete()">Удалить проект</button>
+      </div>
+    </form>
+  </div>
+</div>

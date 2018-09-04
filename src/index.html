@@ -4,11 +4,81 @@
   <meta charset="utf-8">
   <title>AdvercomFront</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @-webkit-keyframes animate-circle {
+      from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes animate-circle {
+      from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    .loader {
+      --size: 10rem;
+
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      height: var(--size);
+      width: var(--size);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .loader > .circle {
+      --duration: 2s;
+      position: absolute;
+      height: inherit;
+      width: inherit;
+      background: purple;
+      border-radius: 50%;
+      -webkit-animation: animate-circle var(--duration) cubic-bezier(.9,.24,.62,.79) infinite;
+      animation: animate-circle var(--duration) cubic-bezier(.9,.24,.62,.79) infinite;
+    }
+
+    .loader > .circle:nth-of-type(1) {
+      -webkit-animation-delay: 0;
+      animation-delay: 0;
+    }
+
+    .loader > .circle:nth-of-type(2) {
+      -webkit-animation-delay: calc(var(--duration) / -3);
+      animation-delay: calc(var(--duration) / -3);
+    }
+
+    .loader > .circle:nth-of-type(3) {
+      -webkit-animation-delay: calc(var(--duration) / -6);
+      animation-delay: calc(var(--duration) / -6);
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+<app-root>
+  <div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</app-root>
 </body>
 </html>
